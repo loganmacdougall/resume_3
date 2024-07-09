@@ -15,6 +15,7 @@ document.body.addEventListener("touchmove", function(e) {
 
     var elem = document.elementFromPoint(touch.clientX, touch.clientY);
 
+    if (!elem) return
     if (elem.classList.contains("jiggleable")) {
         jiggle_element(elem)
     }

@@ -4,15 +4,21 @@
 }
 
 @keyframes jiggle-text {
-    0%,80%,100% {
+
+    0%,
+    80%,
+    100% {
         transform: none;
     }
+
     20% {
         transform: rotateZ(15deg);
     }
+
     60% {
         transform: rotateZ(-12deg);
     }
+
     90% {
         transform: rotateZ(3deg);
     }
@@ -55,11 +61,13 @@ header {
 
 header div {
     display: inline-block;
-    width: 12px;
+    width: 8px;
     background-color: black;
+    border-radius: 8px;
 }
 
-header > a, header i {
+header>a,
+header i {
     transition: transform 0.3s;
     align-content: center;
 }
@@ -68,21 +76,22 @@ header a:has(i) {
     padding: 0 10px;
 }
 
-header a:hover, header a:hover i {
+header a:hover,
+header a:hover i {
     transform: scale(120%);
 }
 
-header > * {
+header>* {
     width: 100%;
     text-align: center;
     font-size: 24px;
 }
 
-header > *:last-child {
+header>*:last-child {
     border-right: none;
 }
 
-header > section {
+header>section {
     display: flex;
     width: 200px;
     font-size: 30px;
@@ -93,6 +102,7 @@ header > section {
         transform: translateY(-150px);
         opacity: 0.0;
     }
+
     100% {
         transform: none;
         opacity: 1.0;
@@ -104,6 +114,7 @@ header > section {
         transform: translateY(-50px);
         opacity: 0.0;
     }
+
     100% {
         transform: none;
         opacity: 1.0;
@@ -115,6 +126,7 @@ header > section {
         transform: translateY(-25px);
         opacity: 0.0;
     }
+
     100% {
         transform: none;
         opacity: 1.0;
@@ -148,11 +160,11 @@ header > section {
     display: inline-block;
 }
 
-#title_name > .jiggleable {
+#title_name>.jiggleable {
     font-size: 104px;
 }
 
-#title_title > .jiggleable {
+#title_title>.jiggleable {
     font-size: 64px;
     font-style: italic;
 }
@@ -192,11 +204,12 @@ header > section {
     transform: scale(105%), rotateY(180deg);
 }
 
-.job-card:focus > .job-card-front {
+.job-card:focus>.job-card-front {
     cursor: auto;
 }
 
-.job-card-front, .job-card-back {
+.job-card-front,
+.job-card-back {
     position: absolute;
     padding: 10px;
     box-sizing: border-box;
@@ -240,19 +253,19 @@ header > section {
     padding-right: 5px;
 }
 
-.job-card-back > ul {
+.job-card-back>ul {
     padding-left: 20px;
 }
 
-.job-card-back > ul > li {
+.job-card-back>ul>li {
     margin-bottom: 10px;
 }
 
-.job-card-front-header > a {
+.job-card-front-header>a {
     font-size: 36px;
 }
 
-.job-card-front-header > p {
+.job-card-front-header>p {
     font-size: 24px;
     margin-top: 0px;
     color: #333333;
@@ -270,19 +283,27 @@ header > section {
     background-image: url(./media/sds_logo.jpg);
 }
 
-#education, #accomplishments {
+#education,
+#accomplishments,
+#professional-summary {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     width: calc(100% - 40px);
-    background: linear-gradient(180deg, white, #ddd);;
+    background: linear-gradient(180deg, white, #ddd);
+    ;
     margin: 10px 20px 20px 20px;
     font-size: 36px;
     text-align: center;
     border: black solid 3px;
     box-sizing: border-box;
+}
+
+#professional-summary {
+    font-size: 24px;
+    padding: 10px;
 }
 
 #accomplishments {
@@ -292,33 +313,71 @@ header > section {
 }
 
 #accomplishments a {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 #accomplishments li:not(:last-child) {
     padding-bottom: 20px;
 }
 
-#education > div {
+#education>div {
     padding: 30px 0;
 }
 
-#education > div > p {
+#education>div>p {
     margin: 0;
 }
 
-#education > div > p:not(:first-child) {
+#education>div>p:not(:first-child) {
     color: #333333;
     font-size: 24px;
 }
 
+.project_grid {
+    margin-top: 20px;
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+    justify-content: space-around;
+    grid-template-columns: repeat(4, 22%);
+    place-items: center;
+}
+
+.project_grid>* {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    border: #333333 solid 3px;
+    transition: transform 0.5s;
+}
+
+.project_grid>*:not(.grid-division):hover {
+    transform: scale(110%);
+}
+
+.grid-division {
+    width: 80%;
+    border: none;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.grid-division>p {
+    font-size: 48px;
+    font-style: italic;
+    transform: rotateZ(-70deg) tra;
+    margin: 0;
+    position: absolute;
+}
 
 @media only screen and (max-width: 1000px) {
-    #title_name > .jiggleable {
+    #title_name>.jiggleable {
         font-size: 64px;
     }
-    
-    #title_title > .jiggleable {
+
+    #title_title>.jiggleable {
         font-size: 40px;
     }
 
@@ -344,11 +403,11 @@ text-decoration: underline;
         animation: slide-down-small-title 0.5s ease-out 1.25s 1 normal forwards;
     }
 
-    #title_name > .jiggleable {
+    #title_name>.jiggleable {
         font-size: 36px;
     }
-    
-    #title_title > .jiggleable {
+
+    #title_title>.jiggleable {
         font-size: 28px;
         margin-top: 10px;
     }
@@ -362,7 +421,7 @@ text-decoration: underline;
         font-size: 28px;
     }
 
-    #education > div > p:not(:first-child) {
+    #education>div>p:not(:first-child) {
         font-size: 20px;
     }
 
