@@ -62,7 +62,7 @@
 	<section id="work-experience">
 		<div tabindex=1 class="job-card">
 			<div id="job-card-intertalk" class="job-card-front">
-				<div class="job-card-front-header">
+				<div class="card-header">
 					<a href="https://intertalksystems.com/">Intertalk Smart Design Systems</a>
 					<p>2022-06 - 2023-11</p>
 				</div>
@@ -82,14 +82,14 @@
 						Created a debugging tool to remotely send events to the software, allowing a big time-save when implementing new events within the software.
 					</li>
 					<li>
-						Created a new feature within the software to record every event that gets called to a file. This will save hours of time for developers trying to figure out which event is being called, as well as giving testers the knowledge to create test cases.
+						Created a new feature within the software to record every event that gets called to a file. This saves a couple a week for developers trying to figure out which event is being called, as well as giving testers the knowledge to create test cases.
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div tabindex=2 class="job-card">
 			<div id="job-card-ta" class="job-card-front">
-				<div class="job-card-front-header">
+				<div class="card-header">
 					<a href="https://www.dal.ca/faculty/computerscience/about/careers/TA-Markers.html">Dalhousie Teaching Assistant</a>
 					<p>2022-09 - 2023-6</p>
 				</div>
@@ -98,14 +98,14 @@
 				<ul>
 					<li>Helped 100s of students debug find a bug in their code in the C programming language.</li>
 					<li>Answered dozens of messages from students asking about complex concepts in C programming which they finally understood after my explanation.</li>
-					<li>Helped many students who needed help from any course with their homework in the learning center.</li>
+					<li>Assisted 50+ students who needed help from any course with their homework in the learning center.</li>
 					<li>Ran 1-on-1 sessions with students as a Dalhousie Tutor in C programming and Java and improved their final grades.</li>
 				</ul>
 			</div>
 		</div>
 		<div tabindex=3 class="job-card">
 			<div id="job-card-sds" class="job-card-front">
-				<div class="job-card-front-header">
+				<div class="card-header">
 					<a href="https://x.com/smartdesignsys">Smart Design Systems</a>
 					<p>2020-02 - 2021-08</p>
 				</div>
@@ -145,8 +145,8 @@
 		<ul>
 			<li>1st place at <a target="_blank" href="https://shiftkeylabs.ca/event/capture-the-flag-cybersecurity-challenge">ShiftKeys Capture the flag event</a> at dalhousie <strong>(2024)</strong></li>
 			<li>2nd place at the <a target="_blank" href="https://cybersecuritychallenge.ca/en/">CyberSci</a> hacking competition in Saint John <strong>(2023)</strong></li>
-			<li>1st place in Kiwanis Music Festival composition competition for highschool students <strong>(2018)</strong></li>
 			<li>Fully completed a course on MongoDB with <a href="https://university.mongodb.com/course_completion/7511f750-dd80-4916-841e-5dd5f0b76a26?utm_source=copy&amp;utm_medium=social&amp;utm_campaign=university_social_sharing" target="_blank">certification</a> <strong>(2020)</strong></li>
+			<li>1st place in Kiwanis Music Festival composition competition for highschool students <strong>(2018)</strong></li>
 		</ul>
 	</section>
 	<script src="./script.js"></script>

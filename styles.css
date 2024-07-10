@@ -181,6 +181,7 @@ header>section {
     width: 100%;
     height: 380px;
     box-sizing: border-box;
+    justify-content: space-around;
 }
 
 .job-card {
@@ -229,9 +230,28 @@ header>section {
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: bottom 25% right 50%;
+    position: relative;
 }
 
-.job-card-front-header {
+.job-card-front::after {
+    content: 'Click Me!';
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
+}
+
+.job-card-front:hover::after {
+    opacity: 1;
+}
+
+.card-header {
     background-color: rgba(255, 255, 255, 0.8);
     transition: background-color 0.3s;
     padding: 10px;
@@ -240,7 +260,7 @@ header>section {
     border-radius: 3px;
 }
 
-.job-card-front-header:hover {
+.card-header:hover {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -261,11 +281,11 @@ header>section {
     margin-bottom: 10px;
 }
 
-.job-card-front-header>a {
+.card-header>*:first-child {
     font-size: 36px;
 }
 
-.job-card-front-header>p {
+.card-header>*:last-child {
     font-size: 24px;
     margin-top: 0px;
     color: #333333;
@@ -335,20 +355,20 @@ header>section {
 
 .project_grid {
     margin-top: 20px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
-    row-gap: 20px;
     justify-content: space-around;
-    grid-template-columns: repeat(4, 22%);
-    place-items: center;
+    margin-bottom: 20px;
 }
 
 .project_grid>* {
     display: inline-block;
-    width: 100%;
-    max-width: 350px;
+    width: 350px;
     height: 350px;
     border: #333333 solid 3px;
+    box-sizing: border-box;
     transition: transform 0.5s;
 }
 
@@ -357,11 +377,11 @@ header>section {
 }
 
 .grid-division {
-    width: 80%;
     border: none;
     display: grid;
     place-items: center;
     position: relative;
+    
 }
 
 .grid-division>p {
@@ -388,9 +408,17 @@ header>section {
         height: unset;
     }
 
+    .job-card-front::after {
+        opacity: 1;
+    }
+
     .job-card {
         height: 380px;
         margin: 10px;
+    }
+
+    #professional-summary {
+        font-size: 20px;
     }
 }
 
@@ -427,5 +455,9 @@ header>section {
 
     #accomplishments {
         font-size: 18px;
+    }
+
+    #professional-summary {
+        font-size: 16px;
     }
 }
