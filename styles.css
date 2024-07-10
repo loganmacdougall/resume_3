@@ -359,8 +359,8 @@ header>section {
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
-    justify-content: space-around;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .project_grid>* {
@@ -381,7 +381,7 @@ header>section {
     display: grid;
     place-items: center;
     position: relative;
-    
+
 }
 
 .grid-division>p {

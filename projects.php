@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php include("./meta-data.php"); ?>
     <title>Logan MacDougall Projects</title>
 </head>
+
 <body>
     <?php include("./header.php"); ?>
     <h1 id="title_name">
@@ -20,28 +22,32 @@
         <div class="grid-division">
             <p>Web</p>
         </div>
-        <a href="./" class="card-header">
+        <a href="https://loganmacdougall.com/madlibs-to-C" class="card-header">
             <p>Madlibs-to-C</p>
             <p>Create a madlibs story and turn it into a C Source file</p>
         </a>
-        <a href="./" class="card-header">
+        <a href="https://loganmacdougall.com/quickpads" class="card-header">
             <p>Quickpads</p>
             <p>An online notepad app designed for convenience</p>
         </a>
-        <a href="./" class="card-header">
+        <a href="https://loganmacdougall.com/binary/" class="card-header">
+            <p>Binary</p>
+            <p>binary, decimal, and hex conversions and float to IEEE bits conversions</p>
+        </a>
+        <a href="https://loganmacdougall.com/star-a-thon" class="card-header">
             <p>Star-A-Thon</p>
             <p>An extra challenge while playing Mario64</p>
         </a>
-        <a href="./" class="card-header">
+        <a href="https://loganmacdougall.com/symbols/" class="card-header">
             <p>Symbols</p>
-            <p>A website to for copying common symbols</p>
+            <p>A website for copying common symbols</p>
         </a>
-        <a href="./" class="card-header">
+        <a href="https://loganmacdougall.com/robot-simon-says/" class="card-header">
             <p>Robot Simon Says</p>
             <p>An children's education website for teaching the basics of programming</p>
         </a>
-        <a href="./" class="card-header">
-            <p>ultimate Tic-Tac-Toe</p>
+        <a href="https://loganmacdougall.com/ultimate-tic-tac-toe/" class="card-header">
+            <p>Ultimate Tic-Tac-Toe</p>
             <p>An implementation of the game "Ultimate Tic-Tak-Toe</p>
         </a>
         <div class="grid-division">
@@ -62,9 +68,21 @@
         <div class="grid-division">
             <p>Applications</p>
         </div>
-        <a href="./" class="card-header">
+        <a href="https://github.com/loganmacdougall/Word-Finder-Solver" class="card-header">
             <p>Word Finder Solver</p>
             <p>A program for solving "Word Finder" type games</p>
+        </a>
+        <a href="./" class="card-header">
+            <p>Flight Simulator</p>
+            <p>A flight simulator written in C</p>
+        </a>
+        <a href="./" class="card-header">
+            <p>C mini projects</p>
+            <p>Several C projects which progressively get more challenging</p>
+        </a>
+        <a href="./" class="card-header">
+            <p>StringLGP</p>
+            <p>A genetic algorithm to solve password vault challenges</p>
         </a>
         <a href="./" class="card-header">
             <p>StarFight</p>
