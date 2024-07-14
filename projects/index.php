@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <?php include("./meta-data.php"); ?>
+    <?php include("../meta-data.php"); ?>
     <title>Logan MacDougall Projects</title>
 </head>
 
 <body>
-    <?php include("./header.php"); ?>
+    <?php include("../header.php"); ?>
     <h1 id="title_name">
         <span class="jiggleable">P</span> <!--
         --> <span class="jiggleable">r</span> <!--
