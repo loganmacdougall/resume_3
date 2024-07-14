@@ -283,6 +283,7 @@ header>section {
 
 .card-header>*:first-child {
     font-size: 36px;
+    margin-top: 0px;
 }
 
 .card-header>*:last-child {
@@ -370,11 +371,17 @@ header>section {
     border: #333333 solid 3px;
     box-sizing: border-box;
     transition: transform 0.5s;
+    background-repeat: no-repeat;
 }
 
 .project_grid>*:not(.grid-division):hover {
     transform: scale(110%);
 }
+
+.project_card {
+    padding: 10px;
+}
+
 
 .grid-division {
     border: none;
@@ -387,7 +394,6 @@ header>section {
 .grid-division>p {
     font-size: 48px;
     font-style: italic;
-    transform: rotateZ(-70deg) tra;
     margin: 0;
     position: absolute;
 }
