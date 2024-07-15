@@ -33,7 +33,13 @@ body {
     padding: 0;
     background: linear-gradient(180deg, var(--background-top), var(--background-bottom));
     min-height: 100svh;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#content-container {
+    padding: 0 5%;
 }
 
 a {
@@ -55,7 +61,6 @@ header {
 .section_title {
     margin-top: 45px;
     margin-bottom: 10px;
-    margin-left: 2em;
     font-size: 36px;
 }
 
@@ -135,7 +140,7 @@ header>section {
 
 #title_name {
     font-size: 0px;
-    text-align: center;
+    text-align: left;
     position: relative;
     margin-top: 50px;
     transform: translateY(-250px);
@@ -146,7 +151,7 @@ header>section {
 
 #title_title {
     font-size: 0px;
-    text-align: center;
+    text-align: left;
     position: relative;
     margin-top: -14px;
     transform: translateY(-80px);
@@ -173,9 +178,15 @@ header>section {
     animation: jiggle-text 0.5s ease-out 0s 1 normal none;
 }
 
+.no-wrap {
+    display: inline-block;
+    word-break: keep-all;
+    word-wrap: normal;
+}
+
 #work-experience {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, calc(100% / 3));
     place-items: center;
     gap: 10px;
     width: 100%;
@@ -187,7 +198,6 @@ header>section {
 .job-card {
     position: relative;
     width: 100%;
-    max-width: 600px;
     height: 100%;
     transition: transform 0.5s;
     transform-style: preserve-3d;
@@ -224,7 +234,7 @@ header>section {
 }
 
 .job-card-front {
-    background: white;
+    background-color: #dadada;
     z-index: 4;
     backface-visibility: hidden;
     cursor: pointer;
@@ -241,7 +251,7 @@ header>section {
     padding: 8px 16px;
     display: inline-block;
     position: absolute;
-    text-align: center;
+    text-align: left;
     bottom: 10%;
     opacity: 0;
     transition: opacity 1.0s ease-in-out;
@@ -269,7 +279,7 @@ header>section {
     z-index: 2;
     transform: scaleX(-100%);
     overflow-y: scroll;
-    font-size: 20px;
+    font-size: 16px;
     padding-right: 5px;
 }
 
@@ -302,6 +312,7 @@ header>section {
 
 #job-card-sds {
     background-image: url(./media/sds_logo.jpg);
+    background-color: white;
 }
 
 #education,
@@ -311,13 +322,11 @@ header>section {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    width: calc(100% - 40px);
+    align-items: flex-start;
+    width: 100%;
     background: linear-gradient(180deg, white, #ddd);
-    ;
-    margin: 10px 20px 20px 20px;
     font-size: 36px;
-    text-align: center;
+    text-align: left;
     border: black solid 3px;
     box-sizing: border-box;
 }
@@ -341,8 +350,9 @@ header>section {
     padding-bottom: 20px;
 }
 
-#education>div {
-    padding: 30px 0;
+#education>div,
+#accomplishments {
+    padding: 20px 10px;
 }
 
 #education>div>p {
@@ -382,23 +392,7 @@ header>section {
     padding: 10px;
 }
 
-
-.grid-division {
-    border: none;
-    display: grid;
-    place-items: center;
-    position: relative;
-
-}
-
-.grid-division>p {
-    font-size: 48px;
-    font-style: italic;
-    margin: 0;
-    position: absolute;
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     #title_name>.jiggleable {
         font-size: 64px;
     }
@@ -407,11 +401,16 @@ header>section {
         font-size: 40px;
     }
 
+    .section_title {
+        font-size: 28px;
+    }
+
     #work-experience {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         height: unset;
+        width: 100%;
     }
 
     .job-card-front::after {
@@ -420,15 +419,18 @@ header>section {
 
     .job-card {
         height: 380px;
-        margin: 10px;
     }
 
     #professional-summary {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
+    #content-container {
+        padding: 0 2%;
+    }
+
     #title_name {
         margin-top: 32px;
     }
@@ -438,17 +440,16 @@ header>section {
     }
 
     #title_name>.jiggleable {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     #title_title>.jiggleable {
-        font-size: 28px;
+        font-size: 24px;
         margin-top: 10px;
     }
 
     .section_title {
         font-size: 24px;
-        margin-left: 1em;
     }
 
     #education {
@@ -456,11 +457,11 @@ header>section {
     }
 
     #education>div>p:not(:first-child) {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #accomplishments {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #professional-summary {
