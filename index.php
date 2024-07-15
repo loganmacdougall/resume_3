@@ -1,4 +1,3 @@
-<?php include("check-for-redirects.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 

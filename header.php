@@ -1,7 +1,7 @@
 <header>
 	<a href="./">About</a>
 	<div></div>
-	<a href="./projects">Projects</a>
+	<a href="./projects.php">Projects</a>
 	<div></div>
 	<section>
 		<a title="Github" href="https://github.com/loganmacdougall"><i class="fa-brands fa-github"></i></a>
