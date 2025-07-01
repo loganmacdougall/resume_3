@@ -32,7 +32,7 @@
                     <p>A program for solving "Word Finder" type games</p>
                 </div>
             </a>
-            <a href="https://loganmacdougall.com/quickpads" style="background: #555555 url(./media/quickpads.png);background-position: left;background-repeat:no-repeat" class="project_card">
+            <a href="https://loganmacdougall.com/quickpad" style="background: #555555 url(./media/quickpads.png);background-position: left;background-repeat:no-repeat" class="project_card">
                 <div class="card-header">
                     <p>Quickpads</p>
                     <p>An online notepad app designed for convenience</p>
@@ -50,7 +50,7 @@
                     <p>Performs brute force attacks fully controlled within discord</p>
                 </div>
             </a>
-            <a href="https://loganmacdougall.com/binary" style="background: url(./media/binary.png);background-position:center;background-repeat:no-repeat;" class="project_card">
+            <a href="https://loganmacdougall.com/ieee-visualize" style="background: url(./media/binary.png);background-position:center;background-repeat:no-repeat;" class="project_card">
                 <div class="card-header">
                     <p>Binary</p>
                     <p>Float to IEEE bits conversions and binary, decimal, and hex conversions</p>
@@ -86,6 +86,7 @@
                     <p>A 2-player turn-based space shooter</p>
                 </div>
             </a>
+            <!--
             <a href="https://loganmacdougall.com/symbols" style="background: #ffe4c4 url(./media/symbols.png);background-position:center;background-repeat:no-repeat;" class="project_card">
                 <div class="card-header">
                     <p>Symbols</p>
@@ -98,6 +99,7 @@
                     <p>An extra challenge while playing Mario64</p>
                 </div>
             </a>
+            -->
         </section>
     </div>
     <script src="./script.js"></script>
