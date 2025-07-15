@@ -50,7 +50,7 @@
                     <p>Performs brute force attacks fully controlled within discord</p>
                 </div>
             </a>
-            <a href="https://loganmacdougall.com/ieee-visualize" style="background: url(./media/binary.png);background-position:center;background-repeat:no-repeat;" class="project_card">
+            <a href="https://loganmacdougall.com/ieee-visualizer" style="background: url(./media/binary.png);background-position:center;background-repeat:no-repeat;" class="project_card">
                 <div class="card-header">
                     <p>Binary</p>
                     <p>Float to IEEE bits conversions and binary, decimal, and hex conversions</p>
