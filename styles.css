@@ -237,10 +237,13 @@ header>section {
     background-color: #dadada;
     z-index: 4;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: bottom 25% right 50%;
     position: relative;
+    transform: rotateY(0deg);
 }
 
 .job-card-front::after {
