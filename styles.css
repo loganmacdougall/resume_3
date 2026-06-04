@@ -239,6 +239,7 @@ header>section {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    transform-style: preserve-3d;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: bottom 25% right 50%;
